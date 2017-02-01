@@ -8,7 +8,7 @@ import javax.faces.event.ActionEvent;
 public class BotaoBean {
 
 	public void sorteiaBotao(ActionEvent event) {
-		UIComponent formulario = event.getComponent().getParent();
+		UIComponent formulario = event.getComponent();
 
 		UIComponent btJonas = formulario.findComponent("botao-jonas");
 		UIComponent btMarcelo = formulario.findComponent("botao-marcelo");
